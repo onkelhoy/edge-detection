@@ -71,9 +71,6 @@ export class Pixels {
       pixels: [],
       row,
       col,
-      y: row,
-      x: col,
-      position: {y:row, x:col},
       key,
       isEdge: !this.isEmpty(row, col),
       black: !this.isEmpty(row, col),
@@ -89,9 +86,6 @@ export class Pixels {
       const pixel = this.individual(r, c);
       pixel.row = r;
       pixel.col = c;
-      pixel.y = r;
-      pixel.x = c;
-      pixel.position = {x:c, y:r};
       pixel.row_local = rl;
       pixel.col_local = cl;
       pixel.key = `${c},${r}`;
